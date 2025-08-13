@@ -15,8 +15,7 @@ st.markdown('<span style="color:gold; font-size: 48px">&#9733;</span> <span styl
 st.write('''Este dashboard ajuda importadores e exportadores na definição de políticas de hedge cambial usando 
          futuros/termo de dólar. Abaixo, três figuras: 1. Resultado do hedge. 2. Comportamento da taxa de câmbio 
          nos últimos dois anos. 3. Comportamento da mediana das previsões da taxa de câmbio para final do ano 
-         corrente segundo Boletim Focus-Bacen. 4. Comportamento da mediana das previsões da taxa de câmbio para 
-         final do ano seguinte segundo Boletim Focus-Bacen.''')
+         corrente segundo Boletim Focus-Bacen.''')
 
 
 st.sidebar.markdown("""
@@ -137,30 +136,6 @@ def get_previsoes(indicador, ano):
                  .collect())
     return previsoes
 
-# Obter as previsões
-previsoes = get_previsoes('Câmbio', 2024)
-
-# Se previsoes é um DataFrame
-datas = previsoes['Data']
-medianas = previsoes['Mediana']
-
-# Reverter a lista para ordem cronológica
-datas = datas[::-1]
-medianas = medianas[::-1]
-
-# Criar o gráfico
-fig, ax = plt.subplots()
-ax.plot(datas, medianas)
-ax.set_title('Mediana das Previsões de Câmbio para Final de 2024')
-ax.set_xlabel('Data')
-ax.set_ylabel('Mediana (R$)')
-ax.legend()
-plt.xticks(rotation=45)
-plt.tight_layout()
-st.pyplot(fig)
-
-
-## E 2025
 # Obter as previsões
 previsoes = get_previsoes('Câmbio', 2025)
 

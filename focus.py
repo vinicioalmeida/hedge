@@ -34,7 +34,7 @@ def get_previsoes(indicador, ano):
     return previsoes
 
 # Obter as previsões
-previsoes = get_previsoes('Câmbio', 2024)
+previsoes = get_previsoes('Câmbio', 2025)
 
 # Se previsoes é um DataFrame
 datas = previsoes['Data']
