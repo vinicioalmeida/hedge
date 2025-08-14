@@ -13,6 +13,7 @@ st.markdown('<span style="color:gold; font-size: 48px">&#9733;</span> <span styl
 st.markdown("""
     Prof. Vinicio Almeida - https://sites.google.com/view/vinicioalmeida             
     """)
+st.markdown('---')
 # Descrição e Explicação
 st.write('''Este dashboard ajuda importadores e exportadores na definição de políticas de hedge cambial usando 
          futuros/termo de dólar. Abaixo, três figuras: 1. Resultado do hedge. 2. Comportamento da taxa de câmbio 
