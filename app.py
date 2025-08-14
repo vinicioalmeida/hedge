@@ -10,21 +10,14 @@ st.set_page_config(page_title='Hedge Cambial')
 
 # Título do Dashboard
 st.markdown('<span style="color:gold; font-size: 48px">&#9733;</span> <span style="font-size: 48px; font-weight: bold">Hedge Cambial</span>', unsafe_allow_html=True)
-
+st.sidebar.markdown("""
+    Prof. Vinicio Almeida - https://sites.google.com/view/vinicioalmeida             
+    """)
 # Descrição e Explicação
 st.write('''Este dashboard ajuda importadores e exportadores na definição de políticas de hedge cambial usando 
          futuros/termo de dólar. Abaixo, três figuras: 1. Resultado do hedge. 2. Comportamento da taxa de câmbio 
          nos últimos dois anos. 3. Comportamento da mediana das previsões da taxa de câmbio para final do ano 
          corrente segundo Boletim Focus-Bacen.''')
-
-
-st.sidebar.markdown("""
-    Prof. Vinicio Almeida
-    vinicio.almeida@ufrn.br
-                    
-    https://sites.google.com/view/vinicioalmeida/                
-    """)
-st.sidebar.markdown('---')
 
 # Seleção do tipo de análise
 tipo_analise = st.sidebar.selectbox('Selecione o Tipo de Análise', ('Exportação', 'Importação'))
