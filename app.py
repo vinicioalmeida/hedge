@@ -11,7 +11,7 @@ st.set_page_config(page_title='Hedge Cambial')
 # Título do Dashboard
 st.markdown('<span style="color:gold; font-size: 48px">&#9733;</span> <span style="font-size: 48px; font-weight: bold">Hedge Cambial</span>', unsafe_allow_html=True)
 st.markdown("""
-    Prof. Vinicio Almeida - https://sites.google.com/view/vinicioalmeida             
+    Prof. Vinicio Almeida - https://linktr.ee/vinicioalmeida             
     """)
 st.markdown('---')
 # Descrição e Explicação
