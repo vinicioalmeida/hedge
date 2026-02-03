@@ -5,3 +5,4 @@ matplotlib
 datetime
 yfinance
 python-bcb
+altair>=5.0.0
